@@ -1,4 +1,3 @@
-
 # Pocket Folder Player: one-file cloud Android APK builder
 # Add this as .github/workflows/build-apk.yml in your GitHub repository.
 name: Build Pocket Folder Player APK
@@ -175,8 +174,8 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-       - name: Prepare Android SDK
-        uses: android-actions/setup-android@v3
+      - name: Prepare Android SDK
+        uses: android-actions/setup-android@v4
         with:
           packages: platform-tools
 
